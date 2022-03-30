@@ -1,0 +1,125 @@
+:root {
+    --background-color-principal: #2196f3;
+    --background-color-secundario: #81c9fa;
+    --color-box-shadow: #808080;
+    --color-principal: #000;
+    --color-secundario: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*outline: 2px solid red;*/
+}
+
+header {
+    background-color: var(--background-color-principal);
+    display: flex;
+    padding: 1.5rem;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+main, section {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    height: 70vh;
+}
+
+.servicio {
+    background-color: var(--background-color-secundario);
+}
+
+.principal-texto, .servicio-texto, .nosotros-texto {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.principal-botones {
+    display: flex;
+    gap: 3rem;
+}
+
+.principal-botones button {
+    font-size: 1.2rem;
+    background-color: var(--background-color-principal);
+    color: var(--color-secundario);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px var(--color-box-shadow);
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+
+footer {
+    background-color: var(--background-color-principal);
+    display: flex;
+    padding: 1.5rem;
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-enlaces {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-enlaces a {
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
